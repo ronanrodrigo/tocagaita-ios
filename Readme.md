@@ -8,4 +8,4 @@ Embora seja descendente de uma familia Japonesa muito organizada, a vida finance
 1. Distribuir o dinheiro que sobrou no dia nos dias restantes do mês;
 1. Aplicar na poupança o dinheiro que sobrou no mês;
 
-É requisito que o lançamento de gastos e o acompanhamento deva funcionar offline. O salário de Tocagaita pode ser obtido no endpoint: http://www.com.br/tocagaita/salario.
+É requisito que o lançamento de gastos e o acompanhamento deva funcionar offline. O salário de Tocagaita pode ser obtido no endpoint: https://gist.githubusercontent.com/ronanrodrigo/574d4ba57b151aad75c90123851389f6/raw/a55e17d14437f7eba90d6f9ab3c901c79cc4c7fc/tocagaita_salary.json
