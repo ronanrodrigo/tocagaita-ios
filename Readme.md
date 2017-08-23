@@ -1,6 +1,7 @@
 # Controle financeiro
 
 Embora seja descendente de uma familia Japonesa muito organizada, a vida financeira de Tocagaita é um caos. Não há limites e ele torra todo o dinheiro dele. Cansado de viver sem dinheiro e de ser uma vergonha para a familia, Tocagaita nos pediu uma ajuda. Ele precisa de limites! E precisa de um aplicativo que possibilite:
+
 1. Informar o quanto pode ser gasto por dia, baseado no salário;
 1. Lançar gastos diários;
 1. Informar gastos por dia;
