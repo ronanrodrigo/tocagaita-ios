@@ -17,6 +17,12 @@
 		3497CA4E1F4EF73600C33999 /* SalaryGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497CA4D1F4EF73600C33999 /* SalaryGateway.swift */; };
 		3497CA511F4EF7A800C33999 /* SalaryGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497CA501F4EF7A800C33999 /* SalaryGatewayMock.swift */; };
 		3497CA531F4EF7C000C33999 /* Salary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3497CA521F4EF7C000C33999 /* Salary.swift */; };
+		E2440E171F5511490087979E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2440E161F5511490087979E /* Result.swift */; };
+		E2440E1A1F55117E0087979E /* DailyExpensesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2440E191F55117E0087979E /* DailyExpensesError.swift */; };
+		E2440E1C1F5511E00087979E /* DailyExpensesLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2440E1B1F5511E00087979E /* DailyExpensesLauncher.swift */; };
+		E2440E1E1F5512280087979E /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2440E1D1F5512280087979E /* Expense.swift */; };
+		E2440E201F5512870087979E /* DailyExpenseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2440E1F1F5512870087979E /* DailyExpenseGateway.swift */; };
+		E274E5211F54FC8D00E2CE1D /* DailyExpensesLauncherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274E5201F54FC8D00E2CE1D /* DailyExpensesLauncherTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		3497CA4D1F4EF73600C33999 /* SalaryGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryGateway.swift; sourceTree = "<group>"; };
 		3497CA501F4EF7A800C33999 /* SalaryGatewayMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryGatewayMock.swift; sourceTree = "<group>"; };
 		3497CA521F4EF7C000C33999 /* Salary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salary.swift; sourceTree = "<group>"; };
+		E2440E161F5511490087979E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E2440E191F55117E0087979E /* DailyExpensesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyExpensesError.swift; sourceTree = "<group>"; };
+		E2440E1B1F5511E00087979E /* DailyExpensesLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyExpensesLauncher.swift; sourceTree = "<group>"; };
+		E2440E1D1F5512280087979E /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		E2440E1F1F5512870087979E /* DailyExpenseGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyExpenseGateway.swift; sourceTree = "<group>"; };
+		E274E5201F54FC8D00E2CE1D /* DailyExpensesLauncherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyExpensesLauncherTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 		3422865C1F4DA224007CE796 /* Togaita */ = {
 			isa = PBXGroup;
 			children = (
+				E2440E151F5511390087979E /* Common */,
 				3497CA4A1F4EF70000C33999 /* DailyExpenses */,
 				3422865D1F4DA224007CE796 /* AppDelegate.swift */,
 				3422865F1F4DA224007CE796 /* ViewController.swift */,
@@ -102,6 +115,7 @@
 				3497CA4F1F4EF78E00C33999 /* Doubles */,
 				342286741F4DA225007CE796 /* Info.plist */,
 				3422867D1F4DA436007CE796 /* DailyExpensesBasedOnSalaryTests.swift */,
+				E274E5201F54FC8D00E2CE1D /* DailyExpensesLauncherTests.swift */,
 			);
 			path = TogaitaTests;
 			sourceTree = "<group>";
@@ -109,9 +123,13 @@
 		3497CA4A1F4EF70000C33999 /* DailyExpenses */ = {
 			isa = PBXGroup;
 			children = (
+				E2440E181F5511630087979E /* Error */,
 				3497CA4B1F4EF71500C33999 /* DailyExpensesBasedOnSalary.swift */,
 				3497CA4D1F4EF73600C33999 /* SalaryGateway.swift */,
 				3497CA521F4EF7C000C33999 /* Salary.swift */,
+				E2440E1B1F5511E00087979E /* DailyExpensesLauncher.swift */,
+				E2440E1D1F5512280087979E /* Expense.swift */,
+				E2440E1F1F5512870087979E /* DailyExpenseGateway.swift */,
 			);
 			path = DailyExpenses;
 			sourceTree = "<group>";
@@ -122,6 +140,22 @@
 				3497CA501F4EF7A800C33999 /* SalaryGatewayMock.swift */,
 			);
 			path = Doubles;
+			sourceTree = "<group>";
+		};
+		E2440E151F5511390087979E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E2440E161F5511490087979E /* Result.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E2440E181F5511630087979E /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				E2440E191F55117E0087979E /* DailyExpensesError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,10 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2440E171F5511490087979E /* Result.swift in Sources */,
 				3497CA4E1F4EF73600C33999 /* SalaryGateway.swift in Sources */,
 				3497CA4C1F4EF71500C33999 /* DailyExpensesBasedOnSalary.swift in Sources */,
+				E2440E1A1F55117E0087979E /* DailyExpensesError.swift in Sources */,
 				342286601F4DA224007CE796 /* ViewController.swift in Sources */,
+				E2440E201F5512870087979E /* DailyExpenseGateway.swift in Sources */,
 				3497CA531F4EF7C000C33999 /* Salary.swift in Sources */,
+				E2440E1E1F5512280087979E /* Expense.swift in Sources */,
+				E2440E1C1F5511E00087979E /* DailyExpensesLauncher.swift in Sources */,
 				3422865E1F4DA224007CE796 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E274E5211F54FC8D00E2CE1D /* DailyExpensesLauncherTests.swift in Sources */,
 				3497CA511F4EF7A800C33999 /* SalaryGatewayMock.swift in Sources */,
 				3422867E1F4DA436007CE796 /* DailyExpensesBasedOnSalaryTests.swift in Sources */,
 			);
