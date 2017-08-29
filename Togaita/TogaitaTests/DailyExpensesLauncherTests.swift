@@ -57,4 +57,19 @@ final class DailyExpensesLauncherTests: XCTestCase {
     XCTAssertEqual(savedExpense == nil, true)
   }
 
+  func testLaunchDailyExpenseWithInvalidExpense() {
+    let expense: Expense? = nil
+    let result = sut.launch(expense: expense)
+    var savedExpense: Expense? = nil
+    var error: Error? = nil
+    switch result {
+    case .success(let expenseValue):
+      savedExpense = expenseValue
+    case .failure(let errorValue):
+      error = errorValue
+    }
+    XCTAssertEqual(error == nil, false)
+    XCTAssertEqual(savedExpense == nil, true)
+  }
+
 }
