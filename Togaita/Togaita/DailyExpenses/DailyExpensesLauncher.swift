@@ -1,9 +1,15 @@
-//
-//  DailyExpensesLauncher.swift
-//  Togaita
-//
-//  Created by Judar Lima on 8/29/17.
-//  Copyright © 2017 Ronan R. Nunes. All rights reserved.
-//
-
 import Foundation
+
+struct DailyExpensesLauncher {
+  private let gateway: DailyExpensesGateway
+
+  init(gateway: DailyExpensesGateway) {
+    self.gateway = gateway
+  }
+
+  func launch(expense: Expense?) -> Result<Expense> {
+    return gateway.save(expense: expense)
+  }
+
+}
+
